@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="mediaqueries.css">
+
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Matheus Oliveira</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+          </ul>    
+        </div>
+      </nav> 
+  
+      <nav id="hamburger-nav">
+        <div class="logo"> Matheus Oliveira</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">Sobre</a></li>
+            <li><a href="projetos.html" onclick="toggleMenu()">Projetos</a></li>
+            <li><a href="contatos.html" onclick="toggleMenu()">Contatos</a></li>
+          </div>
+        </div>
+      </nav>
+
+
+
+<section id="about">
+    <p class="section_text_p1">Conheça Mais</p>
+    <h1 class="title2">Sobre mim</h1>
+    
+   
+   <h3 class="experiência">Experiência</h3>
+    <p class="descrição1"> Em busca de uma primeira experiência em Programação. <br/>Tenho conhecimento em:
+      <br/> <br/> <img width="50" height="50" src="img/jslogo.png"/> <img width="50" height="50" src="img/clogo.png"/> <img width="50" height="50" src="img/pylogo.png"/> <img width="50" height="50" src="img/sqllogo.png"/></p>
+
+    <h3 class="educação">Educação</h3>
+    <p class="descrição2">Cursando em Engenharia de Software. <br/> Estudante de Inglês.</p>
+  </section>
+
+</section>
+<script src="script.js"></script>
+
+       <script type="text/JavaScript" src="vanilla-tilt.js"></script>
+       <script>	VanillaTilt.init(document.querySelectorAll(".card"), {
+           max: 25,
+           speed: 400,
+           glare: true,
+           "max-glare": 1,
+     
+     });
+       </script>
+</body>
