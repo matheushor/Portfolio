@@ -369,11 +369,6 @@ section {
 .title3{
     font-size: 5rem;
     text-align: center;
-    
-
-    
-
-    
 }
 
 .section_text_p3{
@@ -389,12 +384,8 @@ section {
     flex-direction: column;
     min-height: 70vh;
     padding-top: 20rem;
-     
-    
-    
-    
-    
-    
+     position: relative;
+    top: -80px;
   }
 
   #about {
@@ -402,8 +393,6 @@ section {
     justify-content: center;
     flex-direction: column;
     min-height: 70vh;
-    
-   
 }
   
   .contact-info-upper-container {
