@@ -1,18 +1,28 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
   
 }
 
 body {
    
+
     background-image: linear-gradient(to left, rgb(27, 10, 43), rgb(51, 18, 70), rgb(29, 29, 29));
     background-size: 500% 100%;
     animation: degrade-animado 4s infinite alternate;
     color: #ffff;
+
+    background: rgba(0,0,0,0.5)url(../img/32.gif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode: darken;
+    min-height: 100vh;
+    color: #ffffff;
+
     margin: 50px;
-    font-family: roboto, arial, helvetica;
+   
   
 }
 
@@ -27,12 +37,14 @@ body {
 
 
 
+
+
 html {
     scroll-behavior: smooth;
 }
 
 p {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     
 }
 
@@ -55,12 +67,14 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+    
 }
 
 a{
-    color: white ;
+    color:#ffffff ;
     text-decoration: none;
     text-decoration-color: #ffff;
+    
 }
 
 a:hover{
@@ -70,12 +84,34 @@ a:hover{
     text-decoration-color: #000000;
 }
 
+
+#desktop-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 6px 15px;
+    border-radius: 30px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+#desktop-nav a:hover,
+#desktop-nav a.active { 
+    background: #000000;
+    color: #ffff;
+}
+
 .logo {
-    font-size: 2rem;
+    font-size: 2em;
+    color: #ffffff;
+    pointer-events: none;
+    margin-right: 270px;
+    font-weight: 600;
 }
 
 .logo:hover {
     cursor: default;
+    
+    
 }
 
 #hamburger-nav {
@@ -85,6 +121,7 @@ a:hover{
 .hamburger-menu{
     position: relative;
     display: inline-block;
+    
 }
 
 .hamburger-icon {
@@ -94,6 +131,7 @@ a:hover{
     height: 24px;
     width: 30px;
     cursor: pointer;
+    
 }
 
 .hamburger-icon span {
@@ -112,6 +150,7 @@ a:hover{
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    font-weight: 600;
 }
 
 .menu-links a {
@@ -119,7 +158,7 @@ a:hover{
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: rgb(255, 255, 255) ;
+    color: #ffffff;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -285,6 +324,7 @@ section {
 .logos  {
     display: flex;
     gap: 20px;
+    
 }
 
 .avatar {
@@ -302,43 +342,45 @@ section {
     transition-delay: 700ms;
 }
 
-#about {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 70vh;
-    
-   
-}
+
 
 .title2 {
     font-size: 5rem;
     text-align: center;
-    padding-bottom: 3.0rem;
+    padding-bottom: 12rem;
+   
+    
    
 }
 
 .experiência {
     padding-bottom: 1rem;
     font-size: 3rem;
-    text-align: center;
+    text-align: start;
+    display:start;
 }
 
 .descrição1{
     font-size: 1.7rem;
     padding-bottom: 4rem;
-    text-align: center;
+    text-align: start;
+    display:start;
 }
 
 .educação{
     padding-bottom: 1rem;
     font-size: 3rem;
-    text-align: center;
+    text-align:end;
+    display:end;
 }
 
 .descrição2 {
     font-size: 1.7rem;
     text-align: center;
+
+    text-align:end;
+    display:end;
+
     
 
 }
@@ -347,6 +389,9 @@ section {
     font-size: 5rem;
     text-align: center;
     
+
+    
+
     
 }
 
@@ -354,7 +399,7 @@ section {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
-   
+
 }
 
 #contatos {
@@ -365,7 +410,19 @@ section {
     padding-top: 20rem;
     
     
+    
+    
+    
   }
+
+  #about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 70vh;
+    
+   
+}
   
   .contact-info-upper-container {
     display: flex;
@@ -421,6 +478,7 @@ section {
   .project-title {
     margin: 1rem;
     color: black;
+    
   }
   
   .project-btn {
@@ -432,11 +490,14 @@ section {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
+    padding-top: 8rem;
+    
   }
 
   .title4 {
     font-size: 5rem;
     text-align: center;
+    
   }
 
   .container {
@@ -457,6 +518,7 @@ section {
     height: 400px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    
     border-radius: 30px;
     overflow: hidden;
     display: flex;
@@ -466,6 +528,7 @@ section {
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     }
 
+    
 
     .container .card .content {
         padding: 20px;
@@ -490,13 +553,13 @@ section {
 
     .container .card .content h3 {
         font-size: 1.8em;
-        color: #ffff;
+        color: #ffffff;
         z-index: 1;
     }
 
     .container .card .content p {
         font-size: 1em;
-        color: #ffff;
+        color: #ffffff;
         font-weight: 300;
     }
 
@@ -515,17 +578,3 @@ section {
 
     
 
-  /* PROJECTS SECTION */
-
-
-  footer {
-    height: 26vh;
-    padding-top: 10rem;
-  }
-  
-  footer p {
-    text-align: center;
-  }
-
-
-  
