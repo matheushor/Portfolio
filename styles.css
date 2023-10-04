@@ -389,6 +389,8 @@ section {
     flex-direction: column;
     min-height: 70vh;
     padding-top: 20rem;
+     position:relative;
+    top: -150px;;
     
     
     
