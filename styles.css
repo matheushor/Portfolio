@@ -9,11 +9,7 @@
 body {
    
 
-    background-image: linear-gradient(to left, rgb(27, 10, 43), rgb(51, 18, 70), rgb(29, 29, 29));
-    background-size: 500% 100%;
-    animation: degrade-animado 4s infinite alternate;
-    color: #ffff;
-
+  
     background: rgba(0,0,0,0.5)url(../img/32.gif);
     background-repeat: no-repeat;
     background-size:cover;
@@ -22,22 +18,7 @@ body {
     color: #ffffff;
 
     margin: 50px;
-   
-  
 }
-
-@keyframes degrade-animado {
-    0%{ 
-        background-position-x: 0%; 
-    }
-    100% {
-        background-position-x: 100%
-    }
-}
-
-
-
-
 
 html {
     scroll-behavior: smooth;
