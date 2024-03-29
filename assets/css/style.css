@@ -252,13 +252,14 @@ nav{
     margin: auto 0;
     width: 600px;
     height: 450px;
-    border-radius: 45% 45% 45% 45%;
+    border-radius: 45% 55% 45% 55%;
     overflow: hidden;
-    animation: imgFloat 4s ease-in-out infinite;
+    
+    animation: imgFloat 3s ease-in-out infinite;
 }
 .image img{
-    width: 380px;
-    height: 380px;
+    width: 500px;
+    height: 500px;
     object-fit: cover;
 }
 @keyframes imgFloat {
@@ -642,8 +643,8 @@ footer{
 }
 
 
-.container {
-    display: inline;
+.um {
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 70vh;
@@ -651,18 +652,27 @@ footer{
     max-width: 1200px;
     flex-wrap: wrap;
     z-index: 1;
+    perspective: 7000px;
+    gap: 60px;
+}
 
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    
 }
 
 
-   .container .card {
+
+   .um .card {
 
     position: relative;
-    width: 280px;
-    height: 400px;
+    width: 300px;
+    height: 450px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    background: url("images/#1.png") none repeat;
+    
     border-radius: 30px;
     overflow: hidden;
     display: flex;
@@ -674,21 +684,21 @@ footer{
 
     
 
-    .container .card .content {
+    .um .card .content {
         padding: 20px;
         text-align: center;
-        transform: translateY(100px);
+        transform: translateY(70px);
         opacity: 1;
         transition: 0.5s;
         
     }
-    .container .card:hover .content {
-        transform: translateY(0px);
+    .um .card:hover .content {
+        transform: translateY(-15px);
         opacity: 1;
         
     }
 
-    .container .card .content h2{
+    .um .card .content h2{
         position: absolute;
         top: -80px;
         right: 30px;
@@ -697,20 +707,20 @@ footer{
         pointer-events: none;
     }
 
-    .container .card .content h3 {
+    .um .card .content h3 {
         font-size: 1.8em;
         color: #000000;
         z-index: 1;
     }
 
-    .container .card .content p {
+    .um .card .content p {
         font-size: 1em;
         color: #646464;
         font-weight: 300;
     }
 
-    .container .card .content a {
-        position: relative;
+    .um .card .content a {
+        position:relative;
         display: inline-block;
         padding: 8px 20px;
         margin-top: 15px;
@@ -722,7 +732,7 @@ footer{
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .container .card .content a:hover {
+    .um .card .content a:hover {
     background: #c4b57b;
     color: #000000;
     }
