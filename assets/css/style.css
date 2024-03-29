@@ -59,6 +59,7 @@ html{
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
+    
 }
 .btn>i{
     margin-left: 10px;
@@ -66,6 +67,7 @@ html{
 .btn:hover{
     background: var(--second-color);
     color: var(--color-white);
+    transform: scale(1.1);
 }
 
 /* ----- GLOBAL ICONS DESIGN ----- */
@@ -97,6 +99,7 @@ nav{
 }
 .nav-logo{
    position: relative;
+   
 }
 .nav-name{
     font-size: 30px;
@@ -135,6 +138,7 @@ nav{
     position: relative;
     color: var(--first-color);
     transition: .3;
+    
 }
 .active-link::after{
     content: '';
@@ -204,12 +208,13 @@ nav{
     color: var(--color-white);
 }
 .featured-text-btn>.blue-btn:hover{
-    background: var(--first-color-hover);
+    background: #E5D48E;
+    color: #000000;
 }
 .social_icons{
     display: flex;
-    margin-top: 5em;
-    gap: 30px;
+    margin-top: 2.5em;
+    gap: 25px;
 }
 .icon{
     display: flex;
@@ -220,9 +225,19 @@ nav{
     border-radius: 50%;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    color: inherit;
+    background: rgb(87, 175, 45, 1);
+    transition: all 0.3s ease-out;
 }
 .icon:hover{
-    color: var(--first-color);
+  background: rgb(192, 166, 49);
+  transform: scale(1.4) ;
+  transition: 00.4s all;
+  
+  
+}
+.icon:visited{
+    color: #000000;
 }
 
 /* ----- FEATURED IMAGE BOX ----- */
@@ -231,13 +246,13 @@ nav{
     justify-content: right;
     align-content: center;
     min-height: 80vh;
-    width: 50%;
+    width: 100%;
 }
 .image{
     margin: auto 0;
     width: 600px;
     height: 450px;
-    border-radius: 52% 45% 55% 45%;
+    border-radius: 45% 45% 45% 45%;
     overflow: hidden;
     animation: imgFloat 4s ease-in-out infinite;
 }
@@ -335,7 +350,8 @@ h3{
     border-radius: 30px;
 }
 .about-btn button:hover{
-    background: var(--first-color-hover);
+    background: #E5D48E;
+    color: #000000;
 }
 
 /* ----- ABOUT / SKILLS BOX ----- */
@@ -626,7 +642,17 @@ footer{
 }
 
 
-    
+.container {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    position: relative;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+
+}
 
 
    .container .card {
@@ -636,7 +662,7 @@ footer{
     height: 400px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    
+    background: url("images/#1.png") none repeat;
     border-radius: 30px;
     overflow: hidden;
     display: flex;
@@ -654,10 +680,12 @@ footer{
         transform: translateY(100px);
         opacity: 1;
         transition: 0.5s;
+        
     }
     .container .card:hover .content {
         transform: translateY(0px);
         opacity: 1;
+        
     }
 
     .container .card .content h2{
@@ -692,4 +720,9 @@ footer{
         border-radius: 20px;
         font-weight: 500;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .container .card .content a:hover {
+    background: #c4b57b;
+    color: #000000;
     }
